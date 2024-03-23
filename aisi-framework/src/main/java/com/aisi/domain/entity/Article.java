@@ -13,7 +13,7 @@ import lombok.Data;
 /**
  * 文章表(Article)表实体类
  *
- * @author makejava
+ * @author shenjianZ
  * @since 2024-03-23 08:43:22
  */
 @SuppressWarnings("serial")

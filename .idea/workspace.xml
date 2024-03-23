@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/enums/AppHttpCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/HotArticleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/BeanCopyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +42,19 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2e2h9TveB3nS2HOzMD3AorOeEPa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -105,7 +111,7 @@
       <workItem from="1711108430528" duration="1452000" />
       <workItem from="1711150903290" duration="10000" />
       <workItem from="1711150967943" duration="9000" />
-      <workItem from="1711150987692" duration="8057000" />
+      <workItem from="1711150987692" duration="10618000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
       <option name="closed" value="true" />
@@ -115,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711155384286</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality">
+      <option name="closed" value="true" />
+      <created>1711160074410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711160074410</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing" />
+    <MESSAGE value="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality" />
   </component>
 </project>
