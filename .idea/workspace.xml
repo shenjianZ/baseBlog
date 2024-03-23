@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-blog/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/AisiBlogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\reposity\maven-reposity" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.8.8\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2e2h9TveB3nS2HOzMD3AorOeEPa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AisiBlogApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JetBrainsToolProject/InteliJIDEA/baseBlog/aisi-framework/src/main/java/com/aisi/domain",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3137931",
+    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AisiBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="aisi-blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aisi.AisiBlogApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aisi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AisiBlogApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="" />
+      <created>1711108429386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711108429386</updated>
+      <workItem from="1711108430528" duration="1452000" />
+      <workItem from="1711150903290" duration="10000" />
+      <workItem from="1711150967943" duration="9000" />
+      <workItem from="1711150987692" duration="4191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
