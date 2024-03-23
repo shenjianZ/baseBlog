@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/HotArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/BeanCopyUtils.java" afterDir="false" />
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils">
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/ArticleListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/CategoryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/PageVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +36,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLabMergeRequestsSettings">{}</component>
@@ -51,6 +66,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.baseBlog [clean].executor": "Run",
+    "Maven.baseBlog [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -62,7 +79,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JetBrainsToolProject/InteliJIDEA/baseBlog/aisi-framework/src/main/java/com/aisi/domain",
+    "last_opened_file_path": "D:/JetBrainsToolProject/InteliJIDEA/baseBlog/aisi-framework/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,7 +128,10 @@
       <workItem from="1711108430528" duration="1452000" />
       <workItem from="1711150903290" duration="10000" />
       <workItem from="1711150967943" duration="9000" />
-      <workItem from="1711150987692" duration="10618000" />
+      <workItem from="1711150987692" duration="10999000" />
+      <workItem from="1711172475450" duration="69000" />
+      <workItem from="1711172564783" duration="2631000" />
+      <workItem from="1711175219560" duration="6817000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
       <option name="closed" value="true" />
@@ -129,15 +149,39 @@
       <option name="project" value="LOCAL" />
       <updated>1711160074410</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils">
+      <option name="closed" value="true" />
+      <created>1711162553179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711162553180</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing" />
     <MESSAGE value="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality" />
+    <MESSAGE value="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,29 +1,33 @@
 package com.aisi.domain.entity;
 
 import java.util.Date;
+
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Data;
-
+import lombok.experimental.Accessors;
 
 /**
  * 文章表(Article)表实体类
  *
  * @author shenjianZ
- * @since 2024-03-23 08:43:22
+ * @since 2024-03-23 14:22:15
  */
 @SuppressWarnings("serial")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName("as_article")
+@Accessors(chain = true)
 public class Article  {
-    @TableId()
+@TableId
     private Long id;
+
 //标题
     private String title;
 //文章内容
@@ -32,6 +36,9 @@ public class Article  {
     private String summary;
 //所属分类id
     private Long categoryId;
+
+    @TableField(exist = false)
+    private String categoryName;
 //缩略图
     private String thumbnail;
 //是否置顶（0否，1是）
@@ -52,6 +59,7 @@ public class Article  {
     private Date updateTime;
 //删除标志（0代表未删除，1代表已删除）
     private Integer delFlag;
+
 
 
 }
