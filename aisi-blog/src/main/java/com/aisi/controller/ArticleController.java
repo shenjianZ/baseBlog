@@ -1,5 +1,6 @@
 package com.aisi.controller;
 
+import com.aisi.domain.ResponseResult;
 import com.aisi.domain.entity.Article;
 import com.aisi.service.ArticleService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,5 +25,10 @@ public class ArticleController {
     @GetMapping("/list")
     public List<Article> listArticle(){
         return articleService.list() ;
+    }
+
+    @GetMapping("/hotArticleList")
+    public ResponseResult hotArticleList(){
+        return articleService.hotArticleList() ;
     }
 }

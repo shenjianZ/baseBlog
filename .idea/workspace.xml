@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/AisiBlogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,11 +105,24 @@
       <workItem from="1711108430528" duration="1452000" />
       <workItem from="1711150903290" duration="10000" />
       <workItem from="1711150967943" duration="9000" />
-      <workItem from="1711150987692" duration="4191000" />
+      <workItem from="1711150987692" duration="8057000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
+      <option name="closed" value="true" />
+      <created>1711155384286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711155384286</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing" />
   </component>
 </project>
