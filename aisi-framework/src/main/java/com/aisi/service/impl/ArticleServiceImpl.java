@@ -4,6 +4,7 @@ import com.aisi.constants.SystemConstants;
 import com.aisi.domain.ResponseResult;
 import com.aisi.domain.entity.Article;
 import com.aisi.domain.entity.Category;
+import com.aisi.domain.vo.ArticleDetailVo;
 import com.aisi.domain.vo.ArticleListVo;
 import com.aisi.domain.vo.HotArticleVo;
 import com.aisi.domain.vo.PageVo;
@@ -108,6 +109,24 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         Long total = page.getTotal();
         PageVo pageVo = new PageVo(articleListVos, total);
         return ResponseResult.okResult(pageVo);
+    }
+
+    /**
+     * 获取文章详情
+     *
+     * @param id 文章ID
+     * @return 文章详情
+     */
+    @Override
+    public ResponseResult getArticleDetail(Long id) {
+        Article article = getById(id);
+        ArticleDetailVo articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailVo.class);
+        Long categoryId = articleDetailVo.getCategoryId();
+        Category category = categoryService.getById(categoryId);
+        if (Objects.nonNull(category)) {
+            articleDetailVo.setCategoryName(category.getName());
+        }
+        return ResponseResult.okResult(articleDetailVo);
     }
 
 }

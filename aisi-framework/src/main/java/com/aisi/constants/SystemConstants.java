@@ -24,6 +24,12 @@ public class SystemConstants {
      * 分类是禁用状态
      */
     public static final String Category_STATUS_DISABLE = "1";
+
+    /**
+     * 友联是已审核状态
+     */
+    public static final String LINk_STATUS_NORMAL = "0";
+
     /**
      * 评论是正常状态
      */

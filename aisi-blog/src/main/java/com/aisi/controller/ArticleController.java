@@ -37,4 +37,8 @@ public class ArticleController {
     public ResponseResult getArticleList(Long CategoryId, Integer pageNum, Integer pageSize){
         return articleService.articleList(CategoryId, pageNum, pageSize);
     }
+    @GetMapping("/{id}")
+    public ResponseResult getArticleDetail(@PathVariable("id") Long id){
+        return articleService.getArticleDetail(id);
+    }
 }
