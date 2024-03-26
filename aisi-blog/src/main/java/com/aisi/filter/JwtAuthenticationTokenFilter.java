@@ -13,7 +13,6 @@ import lombok.SneakyThrows;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -41,7 +40,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         // 获取请求头中的token
         String token = request.getHeader("token");
         // 没有请求头，不需拦截，放行即可
-        if (StringUtils.hasText(token)) {
+        if (!StringUtils.hasText(token)) {
             filterChain.doFilter(request, response);
             return;
         }
@@ -68,6 +67,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(loginUser, null, null);
         SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+        LoginUser loginUser1 = (LoginUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         filterChain.doFilter(request, response);
     }
 }

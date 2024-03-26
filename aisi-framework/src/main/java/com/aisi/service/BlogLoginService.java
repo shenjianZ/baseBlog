@@ -13,4 +13,5 @@ import com.aisi.domain.entity.User;
 public interface BlogLoginService {
     ResponseResult login(User loginUser);
 
+    ResponseResult logout();
 }

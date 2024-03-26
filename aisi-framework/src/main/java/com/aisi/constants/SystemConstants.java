@@ -30,13 +30,17 @@ public class SystemConstants {
      */
     public static final String LINk_STATUS_NORMAL = "0";
 
-    /**
-     * 评论是正常状态
-     */
-    public static final int COMMENT_STATUS_NORMAL = 0;
-    /**
-     * 评论是禁用状态
-     */
-    public static final int COMMENT_STATUS_DISABLE = 0;
+//    /**
+//     * 评论是正常状态
+//     */
+//    public static final int COMMENT_STATUS_NORMAL = 0;
+//    /**
+//     * 评论是禁用状态
+//     */
+//    public static final int COMMENT_STATUS_DISABLE = 0;
 
+    public static final Long Comment_ROOT_ID = -1L;
+
+    public static String Link_Comment_Type = "1";
+    public static String Article_Comment_Type = "0";
 }

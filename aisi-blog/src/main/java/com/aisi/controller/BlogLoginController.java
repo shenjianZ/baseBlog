@@ -30,6 +30,10 @@ public class BlogLoginController {
         return blogLoginService.login(loginUser);
     }
 
+    @PostMapping("/logout")
+    public ResponseResult logout(){
+        return blogLoginService.logout();
+    }
 
 
 }

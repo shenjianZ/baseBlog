@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication">
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/exception/AiSiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/security/AccessDeniedHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/security/AuthenticationEntryPointImpl.java" afterDir="false" />
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Implement JWT authentication and exception handling&#10;&#10;- Created JwtAuthenticationTokenFilter extending OncePerRequestFilter for login authentication&#10;- Allows login requests to bypass authentication, otherwise performs identity verification and stores verification information in SecurityContextHolder&#10;&#10;- Implemented exception handling for authentication and authorization failures&#10;- AuthenticationEntryPointImpl and AccessDeniedHandlerImpl handle authentication and authorization exceptions respectively&#10;- Configured these exception handlers in ScurityConfig to encapsulate response returns&#10;&#10;- Implemented GlobalExceptionHandler for unified exception handling&#10;- Wraps responses uniformly when exceptions occur in the application, ensuring clients receive a consistent error response">
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/CommentInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/CommentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-blog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/BlogLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/BlogLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/filter/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/BlogLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/BlogLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,47 +68,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.baseBlog [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.baseBlog [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AisiBlogApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JetBrainsToolProject/InteliJIDEA/baseBlog/aisi-framework/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3137931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.sjhy.plugin.ui.TemplateSettingForm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.baseBlog [clean].executor": "Run",
+    "Maven.baseBlog [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AisiBlogApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JetBrainsToolProject/InteliJIDEA/baseBlog/aisi-framework/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3137931",
+    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.aisi.domain.vo" />
       <recent name="com.aisi.domain.entity" />
       <recent name="com.aisi.service" />
-      <recent name="com.aisi.domain.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JetBrainsToolProject\InteliJIDEA\baseBlog\aisi-framework\src\main\java\com\aisi\utils" />
@@ -144,7 +155,8 @@
       <workItem from="1711285052767" duration="7554000" />
       <workItem from="1711326352440" duration="1849000" />
       <workItem from="1711340214631" duration="1361000" />
-      <workItem from="1711406516042" duration="6458000" />
+      <workItem from="1711406516042" duration="8767000" />
+      <workItem from="1711429382944" duration="13954000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
       <option name="closed" value="true" />
@@ -194,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711406800152</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: Implement JWT authentication and exception handling&#10;&#10;- Created JwtAuthenticationTokenFilter extending OncePerRequestFilter for login authentication&#10;- Allows login requests to bypass authentication, otherwise performs identity verification and stores verification information in SecurityContextHolder&#10;&#10;- Implemented exception handling for authentication and authorization failures&#10;- AuthenticationEntryPointImpl and AccessDeniedHandlerImpl handle authentication and authorization exceptions respectively&#10;- Configured these exception handlers in ScurityConfig to encapsulate response returns&#10;&#10;- Implemented GlobalExceptionHandler for unified exception handling&#10;- Wraps responses uniformly when exceptions occur in the application, ensuring clients receive a consistent error response">
+      <option name="closed" value="true" />
+      <created>1711413105285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711413105285</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +237,39 @@
     <MESSAGE value="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils" />
     <MESSAGE value="feat: Implement categoryList and articleList APIs&#10;&#10;- Added categoryList API to query category list&#10;- Implemented articleList API to query articles under a category&#10;&#10;feat: Create PageVo, ArticleListVo, CategoryVo entities&#10;&#10;- Created PageVo, ArticleListVo, and CategoryVo entities to represent data structures&#10;&#10;feat: Configure MybatisConfig for pagination query interceptor&#10;&#10;- Added MybatisConfig configuration class to set up pagination query interceptor" />
     <MESSAGE value="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication" />
+    <MESSAGE value="feat: Implement JWT authentication and exception handling&#10;&#10;- Created JwtAuthenticationTokenFilter extending OncePerRequestFilter for login authentication&#10;- Allows login requests to bypass authentication, otherwise performs identity verification and stores verification information in SecurityContextHolder&#10;&#10;- Implemented exception handling for authentication and authorization failures&#10;- AuthenticationEntryPointImpl and AccessDeniedHandlerImpl handle authentication and authorization exceptions respectively&#10;- Configured these exception handlers in ScurityConfig to encapsulate response returns&#10;&#10;- Implemented GlobalExceptionHandler for unified exception handling&#10;- Wraps responses uniformly when exceptions occur in the application, ensuring clients receive a consistent error response" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement JWT authentication and exception handling&#10;&#10;- Created JwtAuthenticationTokenFilter extending OncePerRequestFilter for login authentication&#10;- Allows login requests to bypass authentication, otherwise performs identity verification and stores verification information in SecurityContextHolder&#10;&#10;- Implemented exception handling for authentication and authorization failures&#10;- AuthenticationEntryPointImpl and AccessDeniedHandlerImpl handle authentication and authorization exceptions respectively&#10;- Configured these exception handlers in ScurityConfig to encapsulate response returns&#10;&#10;- Implemented GlobalExceptionHandler for unified exception handling&#10;- Wraps responses uniformly when exceptions occur in the application, ensuring clients receive a consistent error response" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
