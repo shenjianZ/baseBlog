@@ -4,38 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/BlogLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/LinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/config/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/ArticleDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/BlogUserLoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/LinkVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/LinkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/BlogLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/LinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/BlogLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/LinkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/utils/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+    <list default="true" id="2d29bd94-ab99-4dd2-8d83-32c92fef7b41" name="更改" comment="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication">
+      <change afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/exception/AiSiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/security/AccessDeniedHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/handler/security/AuthenticationEntryPointImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/ArticleListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/domain/vo/ArticleListVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-framework/src/main/java/com/aisi/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/BlogLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisi-blog/src/main/java/com/aisi/controller/BlogLoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +144,7 @@
       <workItem from="1711285052767" duration="7554000" />
       <workItem from="1711326352440" duration="1849000" />
       <workItem from="1711340214631" duration="1361000" />
+      <workItem from="1711406516042" duration="6458000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Initialize baseBlog&#10;&#10;- Set up project structure and configuration files&#10;- Install necessary dependencies&#10;- Implement basic server setup&#10;- Create initial API endpoint for testing">
       <option name="closed" value="true" />
@@ -207,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711182308420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication">
+      <option name="closed" value="true" />
+      <created>1711406800152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711406800152</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +216,8 @@
     <MESSAGE value="feat: Implement CORS handling and hot articles API&#10;&#10;- Added CORS middleware to handle cross-origin requests&#10;- Implemented API endpoint for fetching hot articles&#10;- Tested and verified the functionality" />
     <MESSAGE value="refactor: Optimize SystemConstants, HotArticleVo, and BeanCopyUtils&#10;&#10;- Refactored SystemConstants to handle literal values&#10;- Optimized HotArticleVo processing&#10;- Encapsulated utility functions in BeanCopyUtils" />
     <MESSAGE value="feat: Implement categoryList and articleList APIs&#10;&#10;- Added categoryList API to query category list&#10;- Implemented articleList API to query articles under a category&#10;&#10;feat: Create PageVo, ArticleListVo, CategoryVo entities&#10;&#10;- Created PageVo, ArticleListVo, and CategoryVo entities to represent data structures&#10;&#10;feat: Configure MybatisConfig for pagination query interceptor&#10;&#10;- Added MybatisConfig configuration class to set up pagination query interceptor" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement categoryList and articleList APIs&#10;&#10;- Added categoryList API to query category list&#10;- Implemented articleList API to query articles under a category&#10;&#10;feat: Create PageVo, ArticleListVo, CategoryVo entities&#10;&#10;- Created PageVo, ArticleListVo, and CategoryVo entities to represent data structures&#10;&#10;feat: Configure MybatisConfig for pagination query interceptor&#10;&#10;- Added MybatisConfig configuration class to set up pagination query interceptor" />
+    <MESSAGE value="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement Link, User entities and related services&#10;&#10;- Added LinkVo, UserInfoVo, BlogUserLoginVo, LoginUser, Link, User entities&#10;- Implemented FastJsonRedisSerializer for Redis serialization&#10;- Created RedisConfig as the Bean configuration class for Redis&#10;- Configured WebConfig for CROS (Cross-Origin Resource Sharing) resolution&#10;- Implemented UserMapper, LinkMapper, UserService, LinkService&#10;- Implemented LinkServiceImpl, UserDetailsServiceImpl, BlogLoginServiceImpl&#10;&#10;feat: Implement link query and authentication&#10;&#10;- Implemented query functionality for links (Link entity)&#10;- Implemented authentication using Spring Security&#10;- UserDetailsServiceImpl handles UserDetailsService operations in DAO&#10;- BlogLoginServiceImpl performs specific login authentication, retrieving UserDetails from Authentication" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
